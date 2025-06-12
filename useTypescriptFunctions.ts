@@ -4,7 +4,7 @@ import getStatus, {
   fetchUser,
   Account,
   createAccount,
-} from './types';
+} from './test';
 
 async function main() {
   const user = await fetchUser(1);
