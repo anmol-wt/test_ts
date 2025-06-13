@@ -6,7 +6,7 @@ import getStatus, {
   createAccount,
 } from './test';
 
-async function main() {
+export async function main() {
   const user = await fetchUser(1);
   console.log(greetUser(user));
 
@@ -28,4 +28,5 @@ async function main() {
   console.log('Is Valid User:', Account.isValidUser(user));
 }
 
+// Optional auto-execute
 main().catch(console.error);
